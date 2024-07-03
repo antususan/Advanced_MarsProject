@@ -22,8 +22,6 @@
 
   <ItemGroup>
     <Folder Include="ExtentReports\" />
-    <Folder Include="JsonDatas\SkillsDatas\" />
-    <Folder Include="JsonObjectClass\SkillObjClass\" />
   </ItemGroup>
 
 </Project>

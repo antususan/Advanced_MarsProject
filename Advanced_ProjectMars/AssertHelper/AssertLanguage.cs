@@ -37,8 +37,8 @@ namespace Advanced_ProjectMars.AssertHelper
         public void AssertEditLanguage(string language, string level)
         {
 
-            string updatedLanguage = languageComponentObj.AssertEditLanguage();
-            string updatedLevel = languageComponentObj.AssertEditLevel();
+            string updatedLanguage = languageComponentObj.AssertLanguage();
+            string updatedLevel = languageComponentObj.AssertLevel();
             Assert.That(updatedLanguage == language, "Language has not been updated sucessfully.");
             Assert.That(updatedLevel == level, "Level has not updated sucessfully");
         }
@@ -47,8 +47,6 @@ namespace Advanced_ProjectMars.AssertHelper
 
             string newpopupmessage = languageComponentObj.PopUpMessage();
             Assert.That(newpopupmessage == popupmessage, "Data has not been deleted sucessfully");
-
-
 
 
         }

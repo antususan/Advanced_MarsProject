@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Advanced_ProjectMars;
 using Advanced_ProjectMars;
+using Advanced_ProjectMars;
 using Newtonsoft.Json;
 
 namespace Advanced_ProjectMars.Utilities
@@ -66,7 +67,54 @@ namespace Advanced_ProjectMars.Utilities
             List<ObjDeleteLanguageData> list = JsonConvert.DeserializeObject<List<ObjDeleteLanguageData>>(json);
             return list;
         }
-    
+
+        public List<ObjAddSkillUsingValidData> ReadAddSkillUsingValidData()
+        {
+            using StreamReader reader = new StreamReader(_JsonFilePath);
+            var json = reader.ReadToEnd();
+            List<ObjAddSkillUsingValidData> list = JsonConvert.DeserializeObject<List<ObjAddSkillUsingValidData>>(json);
+            return list;
+        }
+        public List<ObjAddSkillUsingExistingData> ReadAddSkillUsingExistingData()
+        {
+            using StreamReader reader = new StreamReader(_JsonFilePath);
+            var json = reader.ReadToEnd();
+            List<ObjAddSkillUsingExistingData> list = JsonConvert.DeserializeObject<List<ObjAddSkillUsingExistingData>>(json);
+            return list;
+        }
+        public List<ObjAddSkillUsingInvalidData> ReadAddSkillUsingInvalidData()
+        {
+            using StreamReader reader = new StreamReader(_JsonFilePath);
+            var json = reader.ReadToEnd();
+            List<ObjAddSkillUsingInvalidData> list = JsonConvert.DeserializeObject<List<ObjAddSkillUsingInvalidData>>(json);
+            return list;
+        }
+
+        public List<ObjEditSkillUsingValidData> ReadEditSkillUsingvalidData()
+        {
+            using StreamReader reader = new StreamReader(_JsonFilePath);
+            var json = reader.ReadToEnd();
+            List<ObjEditSkillUsingValidData> list = JsonConvert.DeserializeObject<List<ObjEditSkillUsingValidData>>(json);
+            return list;
+        }
+        public List<ObjDeleteSkillData> ReadDeleteSkillData()
+        {
+            using StreamReader reader = new StreamReader(_JsonFilePath);
+            var json = reader.ReadToEnd();
+            List<ObjDeleteSkillData> list = JsonConvert.DeserializeObject<List<ObjDeleteSkillData>>(json);
+            return list;
+        }
+        public List<ObjUpdateAboutProfileData> ReadUpdateAboutProfileData()
+        {
+            using StreamReader reader = new StreamReader(_JsonFilePath);
+            var json = reader.ReadToEnd();
+            List<ObjUpdateAboutProfileData> list = JsonConvert.DeserializeObject<List<ObjUpdateAboutProfileData>>(json);
+            return list;
+        }
+
+        
+
+
 
     }
 }

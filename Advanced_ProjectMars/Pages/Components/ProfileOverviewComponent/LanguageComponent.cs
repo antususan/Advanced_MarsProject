@@ -27,8 +27,7 @@ namespace Advanced_ProjectMars.Pages.Components.ProfileOverviewComponent
         private IWebElement editTextBox;
         private IWebElement editSelectLevel;
         private IWebElement updateButton;
-        private IWebElement newEditLanguage;
-        private IWebElement newEditLevel;
+    
 
         public void RenderLanguageTab()
         {
@@ -82,15 +81,6 @@ namespace Advanced_ProjectMars.Pages.Components.ProfileOverviewComponent
             editSelectLevel= driver.FindElement(By.XPath("//select[@name='level']"));
             updateButton = driver.FindElement(By.XPath("//*[@id=\"account-profile-section\"]/div/section[2]/div/div/div/div[3]/form/div[2]/div/div[2]/div/table/tbody[last()]/tr/td/div/span/input[1]"));
         }
-
-        public void RenderAssertUpdatedLanguageandLevel()
-        {
-            newEditLanguage= driver.FindElement(By.XPath("//*[@id=\"account-profile-section\"]/div/section[2]/div/div/div/div[3]/form/div[2]/div/div[2]/div/table/tbody[last()]/tr/td[1]"));
-            newEditLevel =driver.FindElement(By.XPath("//*[@id=\"account-profile-section\"]/div/section[2]/div/div/div/div[3]/form/div[2]/div/div[2]/div/table/tbody/tr/td[2]"));
-            
-        }
-
-        
 
         public void GotoLanguageTab()
         {
@@ -191,21 +181,10 @@ namespace Advanced_ProjectMars.Pages.Components.ProfileOverviewComponent
             SelectElement levelDropdown = new SelectElement(editSelectLevel);
             levelDropdown.SelectByValue(level);
             updateButton.Click();
-            
-        }
-        public string AssertEditLanguage()
-        {
             Thread.Sleep(2000);
-            RenderAssertUpdatedLanguageandLevel();
-          
-            return newEditLanguage.Text;
+
         }
-        public string AssertEditLevel()
-        {
-            RenderAssertUpdatedLanguageandLevel();
-            Thread.Sleep(3000);
-            return newEditLevel.Text;
-        }
+ 
 
         public void DeleteLanguageData(string language, string level)
         {
