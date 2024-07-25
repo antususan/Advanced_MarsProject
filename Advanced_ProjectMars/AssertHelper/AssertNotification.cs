@@ -34,40 +34,7 @@ namespace Advanced_ProjectMars.AssertHelper
             bool allnotchecked = notificationComponentObj.AssertUnSelectAll();
             Assert.That(allnotchecked, Is.True, " all checkboxes are  checked");
         }
-        //public void AssertNotificationSelectAll()
-        //{
-
-        //    IList<IWebElement> checkboxes = driver.FindElements(By.CssSelector("input[type='checkbox']"));
-
-        //    // Assert all checkboxes are checked
-        //    foreach (IWebElement checkbox in checkboxes)
-        //    {
-        //        if (!checkbox.Selected)
-        //        {
-        //            Console.WriteLine("Checkbox is not checked.");
-        //        }
-        //    }
-
-        //}
-        //public void AssertNotificationUnSelectAll()
-        //{
-
-        //    IList<IWebElement> checkboxes = driver.FindElements(By.CssSelector("input[type='checkbox']"));
-
-        //    // Assert all checkboxes are checked
-        //    foreach (IWebElement checkbox in checkboxes)
-        //    {
-        //        if (checkbox.Selected)
-        //        {
-        //            Console.WriteLine("Checkbox is still checked.");
-        //        }
-        //        else
-        //        {
-        //            Console.WriteLine("Checkbox is unchecked.");
-        //        }
-        //    }
-
-        //}
+       
         public void AssertNotificationMarkSelectAsRead()
         {
             string newpopupmessage =notificationComponentObj.PopUpMessage();

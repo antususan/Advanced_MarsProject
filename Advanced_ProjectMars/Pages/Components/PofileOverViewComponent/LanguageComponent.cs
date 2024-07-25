@@ -46,11 +46,9 @@ namespace Advanced_ProjectMars.Pages.Components.PofileOverViewComponent
         public void RenderAddLanguage()
         {
 
-
             addLanguageTextBox = driver.FindElement(By.XPath("//input[@placeholder='Add Language']"));
             selectLevel = driver.FindElement(By.XPath("//select[@name='level']"));
             addButtonLanguage = driver.FindElement(By.XPath("//input[@class='ui teal button']"));
-
 
         }
         public void RenderAssertLanguageLevel()
@@ -87,7 +85,6 @@ namespace Advanced_ProjectMars.Pages.Components.PofileOverViewComponent
             Thread.Sleep(2000);
             RenderLanguageTab();
 
-            //wait.Waittobeclickable(driver, "Xpath", "//*[@id=\"account-profile-section\"]/div/section[2]/div/div/div/div[3]/form/div[1]/a[1]", 5);         
             languageTab.Click();
         }
         public void ResetLanguageRow()
@@ -97,7 +94,6 @@ namespace Advanced_ProjectMars.Pages.Components.PofileOverViewComponent
             for (int i = 0; i < rowCount; i++)
             {
                 RenderdeleteLanguageButton();
-                //Thread.Sleep(2000);
                 Thread.Sleep(2000);
 
                 deleteLanguageButton.Click();
@@ -202,7 +198,7 @@ namespace Advanced_ProjectMars.Pages.Components.PofileOverViewComponent
             Thread.Sleep(4000);
             RenderdeleteLanguageButton();
             deleteLanguageButton.Click();
-            //Thread.Sleep(5000);
+           
         }
 
 

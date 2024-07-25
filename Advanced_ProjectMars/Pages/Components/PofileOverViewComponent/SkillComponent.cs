@@ -27,10 +27,6 @@ namespace Advanced_ProjectMars.Pages.Components.PofileOverViewComponent
         private IWebElement editSelectLevel;
         private IWebElement updateSkillsButton;
 
-
-
-
-
         public void RenderSkillTab()
         {
             skillTab = driver.FindElement(By.XPath("//*[@id=\"account-profile-section\"]/div/section[2]/div/div/div/div[3]/form/div[1]/a[2]"));
@@ -84,7 +80,6 @@ namespace Advanced_ProjectMars.Pages.Components.PofileOverViewComponent
         {
             Thread.Sleep(2000);
             RenderSkillTab();
-            //wait.Waittobeclickable(driver, "Xpath", "//*[@id=\"account-profile-section\"]/div/section[2]/div/div/div/div[3]/form/div[1]/a[2]", 2);
 
             skillTab.Click();
         }
@@ -157,7 +152,6 @@ namespace Advanced_ProjectMars.Pages.Components.PofileOverViewComponent
             Thread.Sleep(2000);
             RenderCancelButton();
             cancelButton.Click();
-
 
         }
 
