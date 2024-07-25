@@ -1,0 +1,19 @@
+﻿[
+  
+  {
+    "Title": "Computer Coding ",
+    "Description": "",
+    "Category": "Programming & Tech",
+    "SubCategory": "Web & Mobile App",
+    "Tags": "C#" ,
+    "ServiceType": "Hourly basis service",
+    "LocationType": "On-site",
+    "StartDate": "20/09/2024",
+    "EndDate": "18/12/2024",
+    "AvailableDays": "",
+    "SkillTrade": "Credit",
+    "Credit": "10",
+    "Active": "Active",
+    "PopUpMessage": "Please complete the form correctly."
+  }
+]

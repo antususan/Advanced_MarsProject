@@ -2,6 +2,6 @@
   {
     "skill": "Drawing",
     "level": "Expert",
-    "popupmessage": "Please enter skill and experience level"
+    "popupmessage": "This skill is already exist in your skill list."
   }
 ]

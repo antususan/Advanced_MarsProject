@@ -1,4 +1,4 @@
-﻿using Advanced_ProjectMars.Pages.Components.ProfileOverviewComponent;
+﻿using Advanced_ProjectMars.Pages.Components.HomePageComponent;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -14,11 +14,11 @@ namespace Advanced_ProjectMars.AssertHelper
         AboutProfileComponent aboutProfileComponentObj= new AboutProfileComponent();
         public void assertUpdateAboutProfile(string availability, string hours, string earntarget)
         {
+
             string newavailability = aboutProfileComponentObj.AssertAvailability();
-            string newhours =aboutProfileComponentObj.AssertHours();
+            string newhours = aboutProfileComponentObj.AssertHours();
             string newearnTarget = aboutProfileComponentObj.AssertEarnTarget();
-            
-            Assert.That(newavailability == availability, "Availability has not been updated sucessfully");
+            Assert.That(newavailability == availability,"Availability has not been updated sucessfully");
             Assert.That(newhours == hours, "Hours has not been updated sucessfully");
             Assert.That(newearnTarget == earntarget, "EarnTarget has not been updated Sucessfully");
         }

@@ -1,5 +1,5 @@
 ﻿using Advanced_ProjectMars.AssertHelper;
-using Advanced_ProjectMars.Pages.Components.ProfileOverviewComponent;
+using Advanced_ProjectMars.Pages.Components.HomePageComponent;
 using Advanced_ProjectMars.Steps;
 using Advanced_ProjectMars.Utilities;
 using AventStack.ExtentReports;
@@ -50,7 +50,7 @@ namespace Advanced_ProjectMars.Tests
             var AddLanguageWithExistingData = jsonHelperObj.ReadAddLanguageUsingExistingData();
             foreach (var item in AddLanguageWithExistingData)
             {
-                languageStepsObj.CreateLanguageUsingValidDataSteps(item.language, item.level);
+                //languageStepsObj.CreateLanguageUsingValidDataSteps(item.language, item.level);
                 languageStepsObj.CreateLanguageUsingExistingDataSteps(item.language, item.level);
                 assertlanguageobj.AssertExistingLanguage(item.popupmessage);
             }
@@ -88,7 +88,7 @@ namespace Advanced_ProjectMars.Tests
             {
 
                 languageStepsObj.CreateLanguageUsingValidDataSteps(item.language, item.level);
-                languageStepsObj.EditLanguageUsingValidDataSteps(item.newlanguage,item.newlevel);
+                languageStepsObj.EditLanguageUsingValidDataSteps(item.newlanguage, item.newlevel);
                 assertlanguageobj.AssertEditLanguage(item.newlanguage, item.newlevel);
             }
 

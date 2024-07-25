@@ -1,4 +1,4 @@
-﻿using Advanced_ProjectMars.Pages.Components.ProfileOverviewComponent;
+﻿using Advanced_ProjectMars.Pages.Components.PofileOverViewComponent;
 using Advanced_ProjectMars.Utilities;
 using NUnit.Framework;
 using System;

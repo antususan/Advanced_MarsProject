@@ -1,4 +1,4 @@
-﻿using Advanced_ProjectMars.Pages.Components.ProfileOverviewComponent;
+﻿using Advanced_ProjectMars.Pages.Components.PofileOverViewComponent;
 using Advanced_ProjectMars.Utilities;
 using System;
 using System.Collections.Generic;
@@ -20,7 +20,9 @@ namespace Advanced_ProjectMars.Steps
         }
         public void CreateLanguageUsingExistingDataSteps(string language, string level)
         {
-     
+            languageComponentObj.GotoLanguageTab();
+            languageComponentObj.ResetLanguageRow();
+            languageComponentObj.CreateLanguageUsingValidData(language, level);
             languageComponentObj.CreateLanguageUsingExistingData(language, level);
         }
         
@@ -33,7 +35,9 @@ namespace Advanced_ProjectMars.Steps
         }
         public void EditLanguageUsingValidDataSteps(string language, string level)
         {
-            
+            //languageComponentObj.GotoLanguageTab();
+            //languageComponentObj.ResetLanguageRow();
+            //languageComponentObj.CreateLanguageUsingValidData(language, level);
             languageComponentObj.EditLanguageWithValidData(language, level);
 
         }

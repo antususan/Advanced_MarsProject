@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using Advanced_ProjectMars;
 using Advanced_ProjectMars;
 using Advanced_ProjectMars;
+using Advanced_ProjectMars;
+using Advanced_ProjectMars;
 using Newtonsoft.Json;
 
 namespace Advanced_ProjectMars.Utilities
@@ -111,8 +113,40 @@ namespace Advanced_ProjectMars.Utilities
             List<ObjUpdateAboutProfileData> list = JsonConvert.DeserializeObject<List<ObjUpdateAboutProfileData>>(json);
             return list;
         }
+        public List<ObjAddShareSkillRecordUsingValidData> ReadCreateShareSkillRecordUsingValidData()
+        {
+            using StreamReader reader = new StreamReader(_JsonFilePath);
+            var json = reader.ReadToEnd();
+            List<ObjAddShareSkillRecordUsingValidData> list = JsonConvert.DeserializeObject<List<ObjAddShareSkillRecordUsingValidData>>(json);
+            return list;
+        }
 
+        public List<ObjAddShareSkillUsingInvalidData> ReadCreateShareSkillRecordUsingInValidData()
+        {
+            using StreamReader reader = new StreamReader(_JsonFilePath);
+            var json = reader.ReadToEnd();
+            List<ObjAddShareSkillUsingInvalidData> list = JsonConvert.DeserializeObject<List<ObjAddShareSkillUsingInvalidData>>(json);
+            return list;
+        }
+
+        public List<ObjSearchSkillByMainAndSubCategory> ReadSearchSkillByMainAndSubCategory()
+        {
+            using StreamReader reader = new StreamReader(_JsonFilePath);
+            var json = reader.ReadToEnd();
+            List<ObjSearchSkillByMainAndSubCategory> list = JsonConvert.DeserializeObject<List<ObjSearchSkillByMainAndSubCategory>>(json);
+            return list;
+        }
+        public List<ObjSearchSkillByFilter> ReadSearchSkillByFilter()
+        {
+            using StreamReader reader = new StreamReader(_JsonFilePath);
+            var json = reader.ReadToEnd();
+            List<ObjSearchSkillByFilter> list = JsonConvert.DeserializeObject<List<ObjSearchSkillByFilter>>(json);
+            return list;
+        }
         
+
+
+
 
 
 

@@ -40,5 +40,5 @@ namespace Advanced_ProjectMars.Tests
                 test.Log(Status.Pass, "Test-1 Passed");
             
         }
-    }
+      }
 }

@@ -7,8 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
 using OpenQA.Selenium.Chrome;
-using Advanced_ProjectMars.Pages.Components.SignIn;
-using Advanced_ProjectMars.Pages;
+
+using Advanced_ProjectMars.Pages.Components.LoginPageComponent;
+using Advanced_ProjectMars.Pages.Components.SinginPageComponent;
 
 namespace Advanced_ProjectMars.Utilities
 {

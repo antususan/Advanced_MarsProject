@@ -1,9 +1,15 @@
 ﻿[
   {
     "availability": "Part Time",
+    "hours": "More than 30hours a week",
+    "earntarget": "Less than $500 per month"
+    
+  },
+  {
+    "availability": "Full Time",
     "hours": "Less than 30hours a week",
     "earntarget": "More than $1000 per month"
+
   }
-  
 
 ]
