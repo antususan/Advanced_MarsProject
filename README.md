@@ -3,7 +3,8 @@
 
 ## Overview
 An online skill exchange platform where you can share your skills with another person in exchange for money or learn new skills. Users can list their skills on the site and while guest users can search for the skills they are looking for, skill seekers can buy the skills or negotiate to learn the skills by exchanging their own skills. If a deal is made, the users can use the platform to manage their expectations and the outcome.
-![Mars Portal overview](https://raw.githubusercontent.com/antususan/Advanced_MarsProject/ff28203d7c2a4ff6d61f44324c4ce87be216ecc7/Picture%202.png)
+
+![Mars Portal overview](https://raw.githubusercontent.com/antususan/Advanced_MarsProject/b09c57b236b1720e11052c3a12b12e6932aa6c5f/Picture%202.png)
 
 ## my role and duties
 In this project, I tested the various features on the Mars Portal website which is shown below. The website has many features, so I divided them into smaller components to demonstrate how we can manage them more effectively. This approach helped me to  identify the different components and incorporate them into the framework. My role involved preparing and executing manual test cases for these features. And I automated test cases using C# and Selenium Web Driver, with a focus on the Nunit framework ,incorporated Extent Reporter, JSON file for using test data ,also implemented POM pattern to this automation framework. I also reported defects using JIRA.
