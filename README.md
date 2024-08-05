@@ -7,7 +7,7 @@ An online skill exchange platform where you can share your skills with another p
 ## my role and duties
 In this project, I tested the various features on the Mars Portal website which is shown below. The website has many features, so I divided them into smaller components to demonstrate how we can manage them more effectively. This approach helped me to  identify the different components and incorporate them into the framework. My role involved preparing and executing manual test cases for these features. And I automated test cases using C# and Selenium Web Driver, with a focus on the Nunit framework ,incorporated Extent Reporter, JSON file for using test data ,also implemented POM pattern to this automation framework. I also reported defects using JIRA.
 
-
+![Features to test](https://raw.githubusercontent.com/antususan/Advanced_MarsProject/cc840dec6b39395747d9591fbd3ebde437ce15cf/Picture1.png)
 
 ## Branches
 The repository contains the following branches: main: N/A , feature/branch-name**: Feature-1 - It contains manual test cases and automation code .
