@@ -1,0 +1,20 @@
+﻿[
+  {
+    "Title": "Cricket",
+    "Description": "I can play cricket game",
+    "Category": "Fun & Lifestyle",
+    "SubCategory": "Gaming",
+    "Tags": "Games",
+    "ServiceType": "One-off service",
+    "LocationType": "Online",
+    "StartDate": "15/10/2024",
+    "EndDate": "07/12/2024",
+    "AvailableDays": "Sun",
+    "SkillTrade": "Credit",
+    "Credit": "5",
+    "Active": "Active"
+  }
+
+ 
+  
+]
